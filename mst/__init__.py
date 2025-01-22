@@ -1,5 +1,5 @@
 """
-BMI 203: Biocomputing Algorithms - Winter 2023
+BMI 203: Biocomputing Algorithms - Winter 2025
 HW 4: Prim's Algorithm
 """
 
