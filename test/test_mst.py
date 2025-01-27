@@ -22,7 +22,6 @@ def check_mst(adj_mat: np.ndarray,
     (For example, how many edges should a minimum spanning tree have? Are minimum spanning trees
     always connected? What else can you think of?)
     """
-
     def approx_equal(a, b):
         return abs(a - b) < allowed_error
 
@@ -62,12 +61,10 @@ def test_mst_small():
     g.construct_mst()
     check_mst(g.adj_mat, g.mst, 8)
 
-
 def test_mst_single_cell_data():
     """
     Unit test for the construction of a minimum spanning tree using single cell
     data, taken from the Slingshot R package.
-
     https://bioconductor.org/packages/release/bioc/html/slingshot.html
     """
     file_path = 'data/slingshot_example.txt'
@@ -76,7 +73,6 @@ def test_mst_single_cell_data():
     g = Graph(dist_mat)
     g.construct_mst()
     check_mst(g.adj_mat, g.mst, 57.263561605571695)
-
 
 def test_mst_student():
     """

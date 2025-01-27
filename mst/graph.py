@@ -11,7 +11,6 @@ class Graph:
 
         In this project, we will assume `adjacency_mat` corresponds to the adjacency matrix of an undirected graph.
         """
-
         if type(adjacency_mat) == str:
             self.adj_mat = self._load_adjacency_matrix_from_csv(adjacency_mat)
         elif type(adjacency_mat) == np.ndarray:
